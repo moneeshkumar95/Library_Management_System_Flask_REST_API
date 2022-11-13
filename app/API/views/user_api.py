@@ -1,6 +1,6 @@
 from flask import request, abort
 from flask_jwt_extended import get_jwt_identity
-from app import Resource
+from flask_restful import Resource
 from app.DB.models import User, UserCurrentJWTToken, TokenBlocklist, db
 from app.DB.serializers import UserSerializer
 from app.utils import auth_required, librarian_access, user_summit, success_response

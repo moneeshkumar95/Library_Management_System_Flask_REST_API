@@ -1,13 +1,12 @@
 from flask import Flask, Blueprint
-from flask_restful import Api, Resource
+from flask_restful import Api
 from flask_sqlalchemy import SQLAlchemy
 from flask_marshmallow import Marshmallow
 from flask_bcrypt import Bcrypt
 from flask_jwt_extended import JWTManager
-
 import datetime
 
-app = None
+
 db = SQLAlchemy()
 bp_api = Blueprint('api', __name__, url_prefix='/api')
 api = Api(bp_api)
@@ -17,7 +16,6 @@ mm = Marshmallow()
 
 
 def create_app() -> Flask:
-    global app
     app = Flask(__name__)
     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///lms.db'
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
@@ -26,10 +24,11 @@ def create_app() -> Flask:
     app.config['JWT_ACCESS_TOKEN_EXPIRES'] = datetime.timedelta(days=1)
 
     db.init_app(app)
-    # api.init_app(app)
     jwt.init_app(app)
     bcrypt.init_app(app)
     mm.init_app(app)
+
+
     from .utils import create_db
     create_db(app)
 
@@ -44,13 +43,3 @@ def create_app() -> Flask:
     print("-------Tables created Successfully-------")
     print("-------Admin created Successfully-------")
     return app
-
-
-class Test(Resource):
-    def get(self):
-        print('ok')
-
-        return {'ok': 200}
-
-
-api.add_resource(Test, '/test')

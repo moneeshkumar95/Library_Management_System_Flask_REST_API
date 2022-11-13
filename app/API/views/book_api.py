@@ -1,6 +1,6 @@
 from flask import request, abort
 from flask_jwt_extended import get_jwt_identity
-from app import Resource
+from flask_restful import Resource
 from app.DB.models import User, Book, Category, History, BookReview, db
 from app.DB.serializers import BookSerializer, BookReviewSerializer, HistorySerializer
 from app.utils import auth_required, librarian_access, book_summit, success_response, can_review

@@ -1,6 +1,7 @@
 from flask import request, abort
 from flask_jwt_extended import get_jwt_identity
-from app import Resource, bcrypt
+from app import bcrypt
+from flask_restful import Resource
 from app.DB.models import User, UserCurrentJWTToken, TokenBlocklist, db
 from app.utils import auth_required, librarian_access, user_summit, success_response
 from flask_jwt_extended import get_jti, get_jwt, create_access_token
