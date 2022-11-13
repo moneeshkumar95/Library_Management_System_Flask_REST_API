@@ -1,29 +1,31 @@
 # Libary_Management_System_Flask_REST_API
 
+## App Functionality:
 
-![Screenshot_21](https://user-images.githubusercontent.com/78355845/201521968-2da824e6-1855-4911-b9c9-5e69308e60c5.png)
+### Admin:
+-> Create, Read, Update and Delete all Users<br/>
+-> Activate/Deactiavte the Users<br/>
+-> View users/book History & search History by username, book_title, type(borrow/return) & date<br/>
+-> All the functionality that Librarian & Public do<br/>
 
+### Librarian:
+-> Create, Read, Update and Delete only Public users<br/>
+-> Activate/Deactiavte only Public users<br/>
+-> Create, Read, Update and Delete Category<br/>
+-> Create, Read, Update and Delete Book<br/>
+-> All the functionality that Public do<br/>
 
-## App Functionality
+### Public:
+-> Update their account<br/>
+-> Borrow/Return Book<br/>
+-> Search Books by book title, book author, book category, book rating<br/>
+-> View thier current borrowed Books<br/>
+-> View thier History & search History by book_title, type(borrow/return) & date<br/>
 
-## Admin
--> Create, Read, Update and Delete Users
--> Activate/Deactiavte the users
--> View users/book history & search history by username, book_title, type(borrow/return) & date
--> All the functionality that Librarian & Public do
+### Authentication:
+-> JWT
 
-## Librarian
--> Create, Read, Update and Delete only Public users
--> Activate/Deactiavte only  Public users
--> Create, Read, Update and Delete Category
--> Create, Read, Update and Delete Book
+<br/>
 
-## Public
--> Update their account
--> Borrow/Return Book
--> Search books by book title, book author, book category, book rating
--> View thier current borrowed bookd
--> View thier history & search thier history by book_title, type(borrow/return) & date
-
-
-# Authentication using JWT
+## App Structure:
+![Screenshot_23](https://user-images.githubusercontent.com/78355845/201522648-48026737-9f8f-4d4e-a7e7-6101768b2376.png)
