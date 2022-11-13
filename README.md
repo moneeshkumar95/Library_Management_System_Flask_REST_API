@@ -28,20 +28,4 @@
 <br/>
 
 ## App Structure:
-├── app<br/>
-│	├── __init__.py<br/>
-│	├── main.py<br/>
-│	├── utils.py<br/>
-│	└── DB<br/>
-│	│   ├── __init__.py<br/>
-│	│   ├── models.py<br/>
-│	│   └── serializers.py<br/>
-│	└── API<br/>
-│		├── __init__.py<br/>
-│		├── urls.py<br/>
-│		└── views<br/>
-│		   	├── __init__.py<br/>
-│		   	├── book_api.py<br/>
-│		   	├── category_api.py<br/>
-│		   	├── user_api.py<br/>
-│		   	└── user_auth_api.py<br/>
+![Screenshot_23](https://user-images.githubusercontent.com/78355845/201527556-3c5e6614-8995-48a7-bfc9-5789ec51fd28.png)
