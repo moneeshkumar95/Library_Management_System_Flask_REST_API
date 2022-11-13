@@ -1,5 +1,4 @@
 .idea
 venv
-test.py
-test.db
+lms.db
 __pycache__
