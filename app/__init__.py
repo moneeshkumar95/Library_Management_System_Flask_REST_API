@@ -28,7 +28,6 @@ def create_app() -> Flask:
     bcrypt.init_app(app)
     mm.init_app(app)
 
-
     from .utils import create_db
     create_db(app)
 
