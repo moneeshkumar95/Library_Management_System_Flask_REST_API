@@ -10,7 +10,7 @@
 
 ### Librarian:
 -> Create, Read, Update and Delete only Public users<br/>
--> Activate/Deactiavte only Public users<br/>
+-> Activate/Deactivate only Public users<br/>
 -> Create, Read, Update and Delete Category<br/>
 -> Create, Read, Update and Delete Book<br/>
 -> All the functionality that Public do<br/>
